@@ -18,6 +18,7 @@
 BERRY_API void be_writebuffer(const char *buffer, size_t length)
 {
     be_fwrite(stdout, buffer, length);
+    fflush(stdout);
 }
 
 BERRY_API char* be_readstring(char *buffer, size_t size)
