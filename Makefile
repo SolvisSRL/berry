@@ -1,4 +1,4 @@
-CFLAGS      = -Wall -Wextra -std=c99 -pedantic-errors -O2
+CFLAGS      = -Wall -Wextra -std=gnu99 -pedantic-errors -O2
 DEBUG_FLAGS = -O0 -g -DBE_DEBUG
 TEST_FLAGS  = $(DEBUG_FLAGS) --coverage -fno-omit-frame-pointer -fsanitize=address -fsanitize=undefined
 LIBS        = -lm
